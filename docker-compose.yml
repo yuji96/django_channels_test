@@ -5,5 +5,10 @@ services:
     volumes:
       - .:/django
     ports:
-      - "50030:8000"
+      - "8000:8000"
     command: python /django/app/manage.py runserver 0:8000
+
+  redis:
+    image: "redis:latest"
+    ports:
+      - "6379:6379"
