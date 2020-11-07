@@ -2,3 +2,4 @@ asgiref==3.2.10
 channels==2.4.0
 channels_redis
 graphene-django
+django-cors-headers
