@@ -18,6 +18,8 @@ from django.urls import path
 from django.contrib import admin
 
 urlpatterns = [
-    path('chat/', include('chat.urls')),
     path('admin/', admin.site.urls),
+    path('auth/', include('social_django.urls', namespace='social')),
+    path('chat/', include('chat.urls')),
+    path('registration/', include('registration.urls')),
 ]
